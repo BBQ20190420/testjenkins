@@ -1,6 +1,6 @@
 import requests
-from xwtest.common.xwsign import rsaSign
-from xwtest.common.param import getRequestNo,getTime
+from testjenkins.common.xwsign import rsaSign
+from testjenkins.common.param import getRequestNo,getTime
 import json
 platformNo='6000003612'
 

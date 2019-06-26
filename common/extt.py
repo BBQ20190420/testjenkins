@@ -1,3 +1,3 @@
-from xwtest.common.httprequest import Httpreq
+from testjenkins.common.httprequest import Httpreq
 
 http=Httpreq()

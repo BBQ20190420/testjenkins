@@ -1,7 +1,7 @@
 import unittest
-#from xwtest.common.httprequest import Httpreq
-from xwtest.common.param import getRequestNo
-from xwtest.common.extt import http
+#from testjenkins.common.httprequest import Httpreq
+from testjenkins.common.param import getRequestNo
+from testjenkins.common.extt import http
 class Recharge(unittest.TestCase):
 
     def setUp(self) -> None:

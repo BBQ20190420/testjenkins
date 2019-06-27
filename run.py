@@ -1,5 +1,9 @@
-import unittest
 import os
+import sys
+current_path=os.path.abspath(os.path.dirname(__file__))
+rootpath=os.path.split(current_path)[0]
+sys.path.append(rootpath)
+import unittest
 from BeautifulReport import BeautifulReport
 import time
 

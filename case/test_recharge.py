@@ -1,5 +1,6 @@
 import sys
 import os
+#添加此处，可以避免报错"no module XX"
 curPath = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)

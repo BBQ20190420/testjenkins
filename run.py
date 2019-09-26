@@ -6,6 +6,7 @@ sys.path.append(rootpath)
 import unittest
 from BeautifulReport import BeautifulReport
 import time
+from testjenkins.common.sendemail import sendattach
 
 #用例路径
 casepath=os.path.join(os.getcwd(),'case')
@@ -30,6 +31,9 @@ def run(case):
     formattime=time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
     formatreport=f"report{formattime}.html"
     result.report(description="倩倩测试",report_dir=reportpath,filename=formatreport)
+    emailpath=os.path.join(reportpath,formatreport)
+    sendattach(emailpath)
+
 
 if __name__ == '__main__':
     cases=addcase()
